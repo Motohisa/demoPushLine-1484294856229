@@ -6,8 +6,8 @@
 		"start": "node app.js"
 	},
 	"dependencies": {
-		"body-parser": "1.15.2",
-		"express": "4.13.x",
+		"body-parser": "1.13.x",
+		"express": "4.12.x",
 		"cfenv": "1.0.x",
 		"request":"2.75.0"
 	},
