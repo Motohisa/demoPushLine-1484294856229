@@ -15,7 +15,7 @@ var cfenv = require('cfenv');
 // create a new express server
 var app = express();
 // ----------ここから-----
-console.log(app.req);
+console.log("これは自分が出してるの？：" + app.req);
 
 
 var bodyParser = require('body-parser');
