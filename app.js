@@ -21,7 +21,10 @@ var bodyParser = require('body-parser');
 app.use(bodyParser());
 
 app.get('/', function(req,res){
+  console.log("入った");
+  console.log(req.header);
   console.log(req.body);
+  console.log(req);
   res.send('HOGE HOGE');
 })
 
