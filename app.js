@@ -15,24 +15,8 @@ var cfenv = require('cfenv');
 // create a new express server
 var app = express();
 
-// added
-app.set('views', __dirname + '/test' );
-var bodyParser = require('body-parser');
-app.use(bodyParser());
-
-app.get('/', function(req,res){
-  console.log("入った");
-  console.log(req.header);
-  console.log(req.body);
-  console.log(req);
-  res.send('HOGE HOGE');
-})
-
-
-// kokomade
-
 // serve the files out of ./public as our main files
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
